@@ -15,12 +15,24 @@
 			display: block;
 		}
 
+		#wrapsample {
+			background: url(znew.jpg);
+			height: 800px;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			box-shadow : inset 0 0 1em #111;
+		}
+
 		#wrap1 {
 			padding: 2em;
 			overflow: hidden;
 			background: url(zz.jpg) no-repeat;
 			background-size: cover;
 			color: white;
+			height: 650px;
+			box-shadow : inset 0 0 1em #111;
 		}
 
 		#wrap2 {
@@ -28,6 +40,25 @@
 			margin: 0;
 			background: white;
 			overflow: hidden;
+
+		}
+
+		#wrap3 {
+			padding: 1em;
+			margin: 0;
+			overflow: hidden;
+			background: #f2f235 url(overlay.png) repeat;
+		}
+
+		#wrap4 {
+			padding: 1em;
+			margin: 0;
+			overflow: hidden;
+			background: #20bc63 url(overlay.png) repeat;
+		}
+
+		#wrap6 {
+
 		}
 
 		#wrapfoot{
@@ -39,50 +70,93 @@
 
 		div.container {
 			width: 1200px;
-			margin: 0 auto;
-			padding: 1em 0;
+			margin: 0px auto;
+			padding: 1em;
 		}
 
 		div.heading {
 			font-size: 2em;
 			padding: .5em 0;
+			margin: 0px;
+			letter-spacing: 1em;
+			text-align: center;
+		}
+
+		.heading2 {
+			font-size: 2em;
+			padding: 1em 0;
 			margin: 0;
 			letter-spacing: 1em;
 			text-align: center;
 		}
 
 		div.footer {
+			width: 100%;
 			text-align: center;
 			font-size: 2em;
 		}
 
+		.content {
+			font-size: 22px;
+			text-align: justify;
+    		text-justify: inter-word;
+    		padding: 0 .5em;
+    		text-indent: 5px;
+		}
+
 		div.container2 {
-			width: 1366px;
+			width: 100%;
 			padding: 0;
 			margin: 0;
 		}
 
+
 		.box1 {
-			width: 683px;
+			margin: 0;
+			background: orange;
+			width: 46%; 
 			float: left;
 			display: inline-block;
+			padding: 2%;
+			box-shadow : inset 0 0 1em #111;
 		}
 
 		.box2 {
-			width: 683px;
-			float: right;
+			box-shadow : inset 0 0 1em #111;
+			margin: 0;
+			float: left;
+			width: 46%;
 			display: inline-block;
+			padding: 2%;
+		}
+
+		div.boxheading {
+			font-size: 42px;
+			text-align: center;
+			padding: 5px 0;
+		}
+
+		div.boxcontent {
+			font-size: 32px;
+			text-align: justify;
+    		text-justify: inter-word;
+		}
+
+		div.box-transparent{
+			opacity: .7;
+			background: white;
+			height: ;
+			width: ;
 		}
 
 		.nav ul{
 			list-style-type: none;
 			text-align: center;
-			padding: 1em 0;
-
+			padding: 4em 0;
 		}
 
 		.nav li{
-			font-size: 1em;
+			font-size: 1.2em;
 			display: inline-block;
 			padding: 5px;
 			letter-spacing: .5em;
@@ -94,24 +168,75 @@
 			color: white;
 		}
 
-		a:hover {
+		.class1 a:hover {
 			border-top: 3px double red;
 			border-bottom: 3px double red;
 			transition: all 1.3s ease;
 			letter-spacing: .8em;
 		}
 
+		.class2 a:hover {
+			color: red;
+			transition: all 1.3s ease;
+		}
+
 		.quote {
 			padding:0;
 			text-align: center;
-			font-size: 2.5em;
+			font-size: 3em;
 			font-family: 'Itim', cursive;
 		}
 
 		.author {
 			text-align: right;
-			font-size: 4em;
+			font-size: 2.5em;
 			font-family: 'Itim', cursive;
+		}
+
+		.column1, .column2{
+			margin-right: 42px;
+			float: left;
+			display: inline-block;
+		}
+
+		.column3 {
+			display: inline-block;
+			float: right;
+		}
+
+		.box {
+			height: 350px;
+			width: 360px;
+			padding: 4px;
+			border-radius: 5px;
+			border: 2px solid black;
+			background: white;
+			opacity: .7;
+		}
+
+		.boxhead {
+			text-align: center;
+			font-size: 19px;
+		}
+
+		.boxcontent {
+
+		}
+
+		.button {
+			height: 40px;
+			width: 250px;
+			border: 2px solid black;
+			background: black;
+			color: white;
+			text-align: center;
+			padding: 10px;
+			display: inline-block;
+			margin: 1em auto;
+		}
+
+		.buttontext {
+			margin:  8px auto;
 		}
 
 	</style>
@@ -130,7 +255,7 @@
 				– Nelson Mandela
 			</div>
 			<div class="nav">
-				<ul>
+				<ul class="class1">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Your Rights</a></li>
@@ -141,16 +266,137 @@
 			</div>
 		</div>
 	</div>
-	<div class="wrap2">
+
+	<div id="wrap2">
 		<div class="container2">
 			<div class="box1">
-				Box 1
+				<div class="boxheading">
+					VISION
+				</div>
+				<div class="boxcontent">
+					We envision ______ as an informative advocacy and awareness website spreading equal care and treatment regardless of gender, age, culture and wealth.
+				</div>
 			</div>
 			<div class="box2">
-				Box 2
+				<div class="boxheading">
+					MISSION
+				</div>
+				<div class="boxcontent">
+					The mission of _______ is to promote unity of humanity, eradicating inequality, and embracing diversity focusing on the whole part of Human Rights .
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<div id="wrapsample">
+		
+	</div>
+
+	<div id="wrap3">
+		<div class="container2">
+			<div class="heading2">
+				About Human Rights
+			</div>
+			<div class="content">
+				<p>What are human rights? If you were to ask people around, “What is human rights?” You will get a lot of different answers and very few of them know all the rights they are entitled. So basically, human rights are rights of every human being where ever where they are or who they are. It is based on the principle of respect for an individual, where every individual is expected to treat each other rationally and respectfully. As long as a human being is alive he or she is entitled to human rights. </p>
+
+				<p>Human rights is very broad, it does not limit you to only your freedom of speech or right to participate in any religion and many more. These may be important rights but there is a lot more. Basically, it is the choice of an individual and an opportunity that he or she should claim. Examples would be the right to travel to anywhere to go, the right to choose who you marry and have family, the right to express your thought and words and many more. </p>
+
+				<p>During the ancient times, human rights doesn’t exist, because of the existence of slaves. Where the master treat these slaves as objects or property that is owned. And they can do whatever they want without worrying about human rights. But all these things changed during the 539B.C. where Cyrus the Great conquered Babylon and announced that all slaves are free to go, and everyone has the freedom to choose their religion. All these were documented on a clay tablet known today as the Cyrus cylinder. Here starts the beginning of human rights. And as the idea of human rights spread through the countries namely India, Greece and Rome. The people naturally follow unwritten laws which is then called the natural law. However, people who have power can do whatever they want even if it breaks the natural law. Not until a thousand years in England they finally got a king to agree to a law called the Magna Cart, that no one can overrule the rights of people even the king. And thus, at some point in history after a lot of fights they have concluded that all men are created equal. The Americans, the French and the Romans has also claimed their independence, and at the same time the roman concept of natural law had become natural rights. But during the 1800 a man named Napoleon wants to overthrow the French democracy and the world to crown himself emperor, he almost succeeded but with the help of Europe they have defeated him. Human rights were a hot topic but only in Europe. After some time, Europe invaded nearby countries including India. And a lawyer from India named Mahatma Gandhi in the face of violence leads the Indian protest and insisted that all people have rights, not only in Europe, and the Europeans agreed, but not the whole world. Two world wars erupted and half of the Jewish population is exterminated by Hitler in Nazi deathcamps about 90 million people died. So, the countries of earth banded together and formed the United Nations with the basic purpose is “… To reaffirm faith in fundamental human right, in the dignity and worth of the human person.” But with the word human rights, everyone has a different definition. So, the United Nations have created a set of rights that will apply to everyone called the Universal declaration of human rights. And the French concept of natural rights became human rights.</p>
+
+				<p>However, if people have a right to food and shelter, why are sixteen thousand children dying of starvation every day? And if people have freedom of speech, why are thousands imprisoned for speaking their minds? And if the people have a right to education, why do over a billion of adults doesn’t know how to read? And if slavery were abolished, why are twenty-seven million people still enslaved today? The fact is, when it was signed, the universal declaration of human rights doesn’t have the force of law, it was optional. So, the question is. Who will make the words a reality? When Martin Luther King Jr. marched for racial equality, he was marching for rights that were created by the United Nations two decades ago, but still he marched. When Nelson Mandela stood for social justice in the 90’s his country has already decided to abolish sex discrimination for almost 40 years. But still he fought. Those who fight today against torture, poverty, discrimination are not giants or super heroes. They are people, kids, mothers, fathers, teacher, free thinking individuals who chose not to be silent, who realized that human rights are not history lessons, not words on a page. They are the choices we make as human beings, they are the responsibility we all share, to respect each other, help each other, to protect those in need. As Eleanor Roosevelt said “Where, after all, do universal human rights begin? In small places, close to home - so close and so small that they cannot be seen on any maps of the world. Yet they are the world of the individual person; the neighborhood he lives in; the school or college he attends; the factory, farm, or office where he works. Such are the places where every man, woman, and child seeks equal justice, equal opportunity, equal dignity without discrimination. Unless these rights have meaning there, they have little meaning anywhere. Without concerted citizen action to uphold them close to home, we shall look in vain for progress in the larger world.”</p> 
+			</div>
+		</div>
+	</div>
+
+	<div id="wrap4">
+		<div class="container">
+			<div class="heading2">
+				***Some Heading***
+			</div>
+			<div class="column1">
+				<div class="box">
+					<div class="boxhead">
+						Your Right
+					</div>
+				</div>
+			</div>
+			<div class="column2">
+				<div class="box">
+					<div class="boxhead">
+						Speak Up/ Social Issues
+					</div>
+				</div>
+			</div>
+			<div class="column3">
+				<div class="box">
+					<div class="boxhead">
+						Contact us
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Your rights -->
+	<div id="wrap5">
+		<div class="container class2">
+			<div class="heading2">
+				Your Rights
+			</div>
+			<div class="button">
+				<div class="buttontext">
+					<a href="#">Click Here To View File</a>
+				</div>
+			</div>
+			<div class="button">
+				<div class="buttontext">
+					<a href="#">Click Here To View File</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Speak Up c/o Jhennie -->
+	<div id="wrap6">
+		
+	</div>
+
+	<!--opinion -->
+	<div id="wrap4">
+		<div class="container">
+			<div class="heading2">
+				***Opinions***
+			</div>
+			<div class="column1">
+				<div class="box">
+					<div class="boxhead">
+						Your Right
+					</div>
+				</div>
+			</div>
+			<div class="column2">
+				<div class="box">
+					<div class="boxhead">
+						Speak Up/ Social Issues
+					</div>
+				</div>
+			</div>
+			<div class="column3">
+				<div class="box">
+					<div class="boxhead">
+						Contact us
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact us c/o Jhennie -->
+	<div id="wrap8">
+		
+	</div>
+
 
 	<div id="wrapfoot">
 		<div class="footer">
