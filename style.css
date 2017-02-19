@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', sans-serif;
+		}
+		div {
+			display: block;
+		}
+		#wrapsample {
+			background:url(styles/pink.jpg);
+			height: 800px;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			box-shadow : inset 0 0 1em #111;
+		}
+		#wrap0 {
+			padding: 2em;
+			overflow: hidden;
+			color: white;
+			height: 650px;
+			box-shadow : inset 0 0 1em #111;
+		}
+		#wrap1 {
+			padding: 2em;
+			overflow: hidden;
+			background:url(styles/pink1.jpg) no-repeat;
+			background-size: cover;
+			color: white;
+			height: 650px;
+			box-shadow : inset 0 0 1em #111;
+		}
+		#wrap2 {
+			padding: 0;
+			margin: 0;
+			background: white;
+			overflow: hidden;
+			position: static;
+		}
+		#wrap3 {
+			padding: 1em;
+			margin: 0;
+			overflow: hidden;
+			color: white;
+			background: #ae5c5c;
+			background-image: url(styles/pink2.jpg)
+		}
+		#wrap4 {
+			padding: 1em;
+			margin: 0;
+			overflow: hidden;
+			color: white;
+			background: #ae5c5c;
+			background-image: url(styles/pink3.jpg)
+		}
+		#wrap5 {
+			padding: 1em;
+			margin: 0;
+			overflow: hidden;
+			color: white;
+			background: #ae5c5c;
+			background-image: url(styles/pink4.jpg)
+		}
+		
+		#wrap6 {
+			padding: 1em;
+			margin: 0;
+			overflow: hidden;
+			color: white;
+			background: #ae5c5c;
+			background-image: url(styles/pink4.jpg)
+		}
+		
+		div.heading {
+			font-size: 2em;
+			padding: .5em 0;
+			margin: 0px;
+			letter-spacing: 1em;
+			text-align: center;
+		}
+		div.heading2 {
+			font-size: 2em;
+			padding: 1em 0;
+			margin: 0;
+			letter-spacing: 1em;
+			text-align: center;
+		}
+	
+		.footer2
+			{position: fixed;
+			bottom: 0;
+			z-index:50;
+		    width:100%;
+			height:40px;
+			top:10px;
+			text-align: center;
+			padding-top:10px;
+			background-color:black;
+			opacity: 0.9;
+			color:white;
+			font-family:'century gothic';
+			}	
+
+		a.ssHorizontal:link
+			{color: white;
+			font-family:'century gothic';
+			font-size:15px;
+			text-decoration:none;}
+
+		a.ssHorizontal:hover
+			{color: white;
+			border-top: 3px double red;
+			border-bottom: 3px double red;
+			transition: all 1.3s ease;
+			letter-spacing: .8em;}
+			
+		a.ssHorizontal:visited
+			{color: white;
+			font-family:century gothic;
+			font-size:15px;
+			text-decoration:none;}
+
+
+		.quote {
+			padding:0;
+			text-align: center;
+			font-size: 3em;
+			font-family: 'Itim', cursive;
+		}
+		.author {
+			text-align: right;
+			font-size: 2.5em;
+			font-family: 'Itim', cursive;
+		}
