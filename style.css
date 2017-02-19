@@ -1,135 +1,780 @@
 body {
 	margin: 0;
-	padding: 0;
-	font-family: 'Helvetica', sans-serif;
-		}
-		div {
-			display: block;
-		}
-		#wrapsample {
-			background:url(styles/pink.jpg);
-			height: 800px;
-			background-position: 50% 50%;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-			box-shadow : inset 0 0 1em #111;
-		}
-		#wrap0 {
-			padding: 2em;
-			overflow: hidden;
-			color: white;
-			height: 650px;
-			box-shadow : inset 0 0 1em #111;
-		}
-		#wrap1 {
-			padding: 2em;
-			overflow: hidden;
-			background:url(styles/pink1.jpg) no-repeat;
-			background-size: cover;
-			color: white;
-			height: 650px;
-			box-shadow : inset 0 0 1em #111;
-		}
-		#wrap2 {
-			padding: 0;
-			margin: 0;
-			background: white;
-			overflow: hidden;
-			position: static;
-		}
-		#wrap3 {
-			padding: 1em;
-			margin: 0;
-			overflow: hidden;
-			color: white;
-			background: #ae5c5c;
-			background-image: url(styles/pink2.jpg)
-		}
-		#wrap4 {
-			padding: 1em;
-			margin: 0;
-			overflow: hidden;
-			color: white;
-			background: #ae5c5c;
-			background-image: url(styles/pink3.jpg)
-		}
-		#wrap5 {
-			padding: 1em;
-			margin: 0;
-			overflow: hidden;
-			color: white;
-			background: #ae5c5c;
-			background-image: url(styles/pink4.jpg)
-		}
-		
-		#wrap6 {
-			padding: 1em;
-			margin: 0;
-			overflow: hidden;
-			color: white;
-			background: #ae5c5c;
-			background-image: url(styles/pink4.jpg)
-		}
-		
-		div.heading {
-			font-size: 2em;
-			padding: .5em 0;
-			margin: 0px;
-			letter-spacing: 1em;
-			text-align: center;
-		}
-		div.heading2 {
-			font-size: 2em;
-			padding: 1em 0;
-			margin: 0;
-			letter-spacing: 1em;
-			text-align: center;
-		}
-	
-		.footer2
-			{position: fixed;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+div {
+	display: block;
+}
+
+/*----------Navigation-----------*/
+/*---------Text Elements---------*/
+/*----------| header MEJ OK|--------*/
+		.header{
+            position: fixed;
 			bottom: 0;
 			z-index:50;
 		    width:100%;
-			height:40px;
-			top:10px;
+			height:5%;
+			top:0%;
 			text-align: center;
 			padding-top:10px;
-			background-color:black;
-			opacity: 0.9;
-			color:white;
-			font-family:'century gothic';
+			background-color: #2a2a2a;
+			opacity: 0.6;
+			color: white;
+			font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 900;
 			}	
+        .header a {
+            padding: 1%;
+            font-size: 30px;
+        }
+        .header h1 {
+        	display:inline;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
 
 		a.ssHorizontal:link
 			{color: white;
-			font-family:'century gothic';
 			font-size:15px;
-			text-decoration:none;}
-
+			text-decoration:none;
+		}
 		a.ssHorizontal:hover
-			{color: white;
-			border-top: 3px double red;
-			border-bottom: 3px double red;
-			transition: all 1.3s ease;
-			letter-spacing: .8em;}
-			
+			{color: #3f3f3f;
+			transition: all 0.3s ease;
+		}		
 		a.ssHorizontal:visited
 			{color: white;
-			font-family:century gothic;
 			font-size:15px;
-			text-decoration:none;}
+			text-decoration:none;
+		}
+/*-----------| Wrap 1  OK|----------*/
+		#wrap1 {
+			padding: 0;
+			overflow: hidden;
+			background:url(images/image.jpeg) no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			color: white;
+			height:100vh;
+			box-shadow : inset 0 0 1em #111;
+			margin: 0;
+		}
 
+		#wrap1 div.container {
+			position: absolute;
+			left:1000px;
+			width: 400px;
+		    height: 680px;
+			margin: 0px auto;
+			background-color: white;
+			opacity: 0.4;
+			padding: 1em;
+		}
+
+		#wrap1 div.container:hover {
+			position:absolute;
+			left:400px;
+			width:460px;
+			height:760px;
+			background-color:#696969;
+			opacity:0.9;
+			text-align:center;
+			padding-left:20px;
+			box-shadow: 0px 0px 1000px white;
+			transition: all 2s ease-in-out;
+			-webkit-transition: all 2s ease-in-out;
+			-moz-transition: all 2s ease-in-out;
+			}
+
+		#wrap1 div.heading {
+			font-size: 2em;
+			padding: .2em 0;
+			margin: 0px;
+			top: 100px;
+			text-align: left;
+		}
+
+		.palette{
+		    color:black;
+		    font-size: 2em;
+		    top:0px;
+		    padding-bottom: 0px;
+		    font-weight: bold;
+		    padding:0;
+		}
+
+		.head1 {
+			display: inline;
+		    font-size: 2em;
+		    font-weight: bold;
+		    padding-bottom: 0px;
+		}
+/*------------| Pic 1 |-------------*/
+		#pic1 {
+			position: relative;
+			top:0px;
+			padding: 0;
+			background:url(images/respect.jpg) no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			color: white;
+			z-index: 10;
+			height: 650px;
+			box-shadow : inset 0 0 1em #111;
+			margin: 0;
+		}
+
+		#pic1 div.container {
+			position:absolute;
+			width: 900px;
+		    height: 300px;
+		    top:150px;
+		    z-index: 5;
+		    left:435px;
+		    background-color: #171d22;
+		    opacity: 0.4;
+			margin: 0px auto;
+			padding: 1em;
+		}
+
+		#pic1 .head1{
+			position: absolute;
+			top:50px;
+			display: inline;
+		    font-size: 50px;
+		    font-weight: bold;
+		    float:right;
+		}
+
+		div.heading3 h2:nth-of-type(odd){
+			margin-top: 0;
+			padding-top: 0;
+			color:white;
+			float:left;
+		    font-family: 'Century Gothic', sans-serif;
+		    font-size: 30px;
+		}
+
+		div.heading3 h2:nth-of-type(even){
+			display: inline;
+			margin-top: 0;
+			padding-top: 0;
+			float:right;
+			color:white;
+		    font-family: 'Century Gothic', sans-serif;
+		    font-size: 30px;
+		}
+/*------| About Human Rights MEDYO OKAY|------*/
+		div.container2 {
+			width: 100%;
+			margin: 10px auto;
+		    height: 80%;
+		}
+
+		.heading2 {
+			font-size: 2em;
+			padding: 0.5em 0;
+			margin-left: 10%;
+			text-align: left;
+		}
+		.heading2 h1{
+		    font-family: 'Lato', sans-serif;
+		}
+		.heading2 h2{
+		    font-family: 'Montserrat';
+		    margin-left: 5%;
+		    margin-right: 5%;
+		}
+		.heading2.alter h2{
+		    font-size: 1.0em;
+		}
+		.heading2.alter2 h2{
+		    font-size: 0.6em;
+		}
+
+/*------------| WRAP 3 OK|------------*/
+	#wrap3 {
+		height: 100vh;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		background:url(images/hands.png) no-repeat;
+		background-size: cover;
+		background-attachment: fixed;	
+	}
+
+	div.container3a {
+		width: 100%;
+		margin: 10px auto;
+	    height: 100vh;
+	}
+
+	.heading2 h2{
+	    font-family: 'Times New Roman';
+	    margin-left: 5%;
+	    margin-right: 5%;
+	    z-index: 10;
+	}
+	.heading2.alter h2{
+		font-size: 1.2em;
+		z-index: 10;
+	}
+	.heading2.alter2 h2{
+	    font-size: 0.8em;
+	    z-index: 10;
+	}
+/*------------| WRAP 4 OK|------------*/
+	#wrap4 {
+		padding: 0px;
+		margin: 0;
+		overflow: hidden;
+		height: 100vh;
+		background-color: #2a2a2a;
+	}
+
+	#wrap4 div.container{
+		width: 100%;
+		height:	650px;
+		margin: 0px auto;
+		padding: 0px;
+	}
+
+	#wrap4 div.heading2{
+		position:relative;
+		top:42px;
+		left:0px;
+		margin: 0px;
+		height:80px;
+		width:100%;
+		z-index:5;
+		background-color:#e4e4e4;
+		opacity: 0.8;
+	}
+
+	#wrap4 .heading2 .palette2{
+		position:relative;
+		font-size: 70px;
+		left:0px;
+		margin: 0px;
+		padding: 0;
+		z-index: 10;
+		color:#696969;
+	}		
+
+	#wrap4 .column1{
+		position:relative;
+		top:70px;
+		width: 100%;
+		float:left;
+		display: inline-block;
+	}
+
+	#wrap4 .column1 .box{
+		top:100px;
+		width:100%;
+	    height: 120px;
+		padding: 4px;
+		margin: 0 auto;
+		border-radius: 5px;
+		/*border: 2px solid white;*/
+		z-index:11;
+	}
+
+	#wrap4 .column1 .logo {
+		float:left;
+		position: relative;
+		top:0px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#wrap4 .column1 .boxhead {
+		text-align:left;
+		font-size: 19px;
+	    color: white;
+	}
+	#wrap4 .column1 .boxhead h3{
+		padding-top: 20px;
+	    font-size:30px;
+	    margin:0;
+	    font-family: 'Georgia';
+	}
+	#wrap4.column1 .boxhead p{
+		margin: 0;
+	    padding-left:10px;
+	    padding-right:10px;
+	    font-family: 'Times New Roman';
+	    font-size:20px;
+	}
+
+	#wrap4 .column2{
+		position:relative;
+		top:80px;
+		width: 100%;
+		float:left;
+		display: inline-block;
+	}
+
+	#wrap4 .column2 .box{
+		top:100px;
+		width:100%;
+	    height: 120px;
+		padding: 4px;
+		margin: 0 auto;
+		border-radius: 5px;
+		/*border: 2px solid white;*/
+		z-index:11;
+	}
+	#wrap4 .column2 .logo {
+		float:left;
+		position: relative;
+		top:0px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#wrap4 .column2 .boxhead {
+		text-align:left;
+		font-size: 19px;
+	    color: white;
+	}
+	#wrap4 .column2 .boxhead h3{
+		padding-top: 20px;
+	    font-size:30px;
+	    margin:0;
+	    font-family: 'Georgia';
+	}
+	#wrap4 .column2 .boxhead p{
+		margin: 0;
+	    padding-left:10px;
+	    padding-right:10px;
+	    font-family: 'Times New Roman';
+	    font-size:20px;
+	}
+
+	#wrap4 .column3 {
+		position:relative;
+		top:90px;
+		width: 100%;
+		float:left;
+		display: inline-block;
+	} 
+
+	#wrap4 .column3 .box{
+		top:100px;
+		width:100%;
+	    height: 120px;
+		padding: 4px;
+		margin: 0 auto;
+		border-radius: 5px;
+		/*border: 2px solid white;*/
+		z-index:11;
+	}
+	#wrap4 .column3 .logo {
+		float:left;
+		position: relative;
+		top:0px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#wrap4 .column3 .boxhead {
+		text-align:left;
+		font-size: 19px;
+	    color: white;
+	}
+	#wrap4 .column3 .boxhead h3{
+		padding-top: 20px;
+	    font-size:30px;
+	    margin:0;
+	    font-family: 'Georgia';
+	}
+	#wrap4 .column3 .boxhead p{
+		margin: 0;
+	    padding-left:10px;
+	    padding-right:10px;
+	    font-family: 'Times New Roman';
+	    font-size:20px;
+	}
+
+	/*General for all the images*/
+	.box img.circle {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	}
+/*---------| QUOTE NELSON OK |---------*/
+		#wrapsample {
+			background:url(images/supernelson.jpg);
+			height: 100vh;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			box-shadow : inset 0 0 1em #111;
+			background-attachment: fixed;
+		}
+
+		#wrapsample div.container{
+			position: absolute;
+			left:10px;
+			width: 400px;
+		    height: 630px;
+		    overflow: hidden;
+			margin: 0px auto;
+			background-color: white;
+			opacity: 0.4;
+			padding: 1em;
+		}
 
 		.quote {
-			padding:0;
-			text-align: center;
-			font-size: 3em;
-			font-family: 'Itim', cursive;
+			padding:20px;
+			text-align: left;
+			font-size: 45px;
+			font-family: 'Century Gothic', 'sans-serif';
+		    margin-top: 20%;
+		    color: black;
 		}
+
 		.author {
-			text-align: right;
-			font-size: 2.5em;
-			font-family: 'Itim', cursive;
+			position:absolute;
+			text-align: left;
+			font-size: 20px;
+			padding:0px;
+		    font-family: 'Century Gothic', 'sans-serif';
+		    color: black;
+		}
+
+		.linkF{
+			position:absolute;
+   			font-family: 'Times New Roman';
+   			float:left; 
+   			opacity: 0.3;
+   			padding:0;
+		}
+		.linkF:visited{
+   			font-family: 'Times New Roman';
+   			float:left;
+   			padding:0;
+   			color:black;
+   			opacity:0.3;
+		}
+/*---------| Pic 2 OK |---------*/
+
+	#pic2 {
+		position: relative;
+		top:0px;
+		padding: 0;
+		background:url(images/altimage.jpg) no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		color: white;
+		z-index: 10;
+		height: 650px;
+		box-shadow : inset 0 0 1em #111;
+		margin: 0;
+	}
+
+	#pic2 div.container {
+		position:absolute;
+		width: 900px;
+		height: 250px;
+		top:150px;
+		z-index: 5;
+		left:190px;
+		background-color: #171d22;
+		opacity: 0.4;
+		padding: 1em;
+	}
+
+	#pic2 .head1{
+		position: absolute;
+		top:60px;
+		left:350px;
+		display: inline;
+		font-size: 90px;
+		font-weight: bold;
+		float:right;
+		margin:0px;
+	}
+
+	#pic2 div.heading3 h2{
+		position: relative;
+		top:80px;
+		left:140px;
+	    margin-top: 5%;
+	    font-family: 'times new roman';
+	    font-size: 30px;
+	}
+	#pic2 div.heading3.positionchange{
+	    text-align: left;
+	}
+	#pic2 div.heading3.positionchange h2{
+		float: left;
+		margin-left: 10px;
+		display: inline;
+		text-align:left;
+	}
+/*---------| Pic 3 OK|---------*/
+	#pic3 {
+		position: relative;
+		top:0px;
+		padding: 0;
+		background:url(images/love.jpg) no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		color: white;
+		z-index: 10;
+		height: 650px;
+		box-shadow : inset 0 0 1em #111;
+		margin: 0;
+	}
+
+	#pic3 div.container {
+		position:absolute;
+		width: 400px;
+		height: 618px;
+		z-index: 5;
+		left:70px;
+		background-color: #171d22;
+		opacity: 0.4;
+		padding: 1em;
+		overflow: hidden;
+	}
+	#pic3 .head1{
+		position: absolute;
+		top:250px;
+		left:100px;
+		display: inline;
+		font-size: 90px;
+		font-weight: bold;
+		float:right;
+		margin:0px;
+	}
+
+	#pic3 div.heading3 h2{
+		position: relative;
+	    margin-top:10%;
+	    font-family: 'times new roman';
+	    font-size: 30px;
+	    display: inline;
+	}
+	#pic3 div.heading3.positionchange.again h2:nth-of-type(odd){
+		margin:0px;
+		display: inline;
+		top:220px;
+	    left:15px;
+	}
+	#pic3 div.heading3.positionchange.again h2:nth-of-type(even){
+		left:0px;
+		top:280px;
+		margin:0px;
+		display: inline;
+	}
+/*------------| Wrap 6 | -------------*/
+	#wrap6 {
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		background: #d3d3d3;
+		height: 100vh;
+		}
+
+	#wrap6 div.container {
+		position: absolute;
+		width: 100%;
+	    height: 100vh;
+		margin: 0px auto;
+		padding: 0px;
+		}
+
+	#wrap6 div.heading2{
+		position:relative;
+		top:42px;
+		left:0px;
+		margin: 0px;
+		height:80px;
+		width:100%;
+		z-index:5;
+		background-color:#e4e4e4;
+		opacity: 0.8;
+		}
+
+	#wrap6 .heading2 .palette2{
+		position:relative;
+		font-size: 70px;
+		left:0px;
+		margin: 0px;
+		padding: 0;
+		z-index: 10;
+		color:#696969;
+		}	
+
+	#wrap6 .heading2.alter2 h2{
+   		font-size: 0.8em;
+		}	
+
+	#wrap6 .column1{
+		position:relative;
+		top:90px;
+		width: 100%;
+		float:left;
+		display: inline-block;
+		}
+
+	#wrap6 .column1 .box{
+		top:100px;
+		width:100%;
+	    height: 120px;
+		padding: 4px;
+		margin: 0 auto;
+		border-radius: 5px;
+		border: 2px solid black;
+		z-index:11;
+		}
+
+	#wrap6 .column1 .logo {
+		float:left;
+		position: relative;
+		top:0px;
+		text-align: center;
+		margin: 0 auto;
+		}
+
+	#wrap6  .column1 .boxhead {
+		text-align:left;
+		font-size: 19px;
+	    color: black;
+		}
+
+	#wrap6 .column1 .boxhead h3{
+		padding-top: 20px;
+	    font-size:30px;
+	    margin:0;
+	    font-family: 'Georgia';
+		}
+
+	#wrap6 .column1 .boxhead p{
+		margin: 0;
+	    padding-left:10px;
+	    padding-right:10px;
+	    font-family: 'Times New Roman';
+	    font-size:20px;
+		}
+
+	#wrap6 .column2{
+		position:relative;
+		top:100px;
+		width: 100%;
+		float:left;
+		display: inline-block;
+		}
+
+	#wrap6 .column2 .box{
+		top:100px;
+		width:100%;
+	    height: 120px;
+		padding: 4px;
+		margin: 0 auto;
+		border-radius: 5px;
+		border: 2px solid black;
+		z-index:11;
+		}
+
+	#wrap6 .column2 .logo {
+		float:left;
+		position: relative;
+		top:0px;
+		text-align: center;
+		margin: 0 auto;
+		}
+
+	#wrap6 .column2 .boxhead {
+		text-align:left;
+		font-size: 19px;
+	    color: black;
+		}
+
+	#wrap6 .column2 .boxhead h3{
+		padding-top: 20px;
+	    font-size:30px;
+	    margin:0;
+	    font-family: 'Georgia';
+		}
+
+	#wrap6 .column2 .boxhead p{
+		margin: 0;
+	    padding-left:10px;
+	    padding-right:10px;
+	    font-family: 'Times New Roman';
+	    font-size:20px;
+		}
+
+	#wrap6 .column3 {
+		position:relative;
+		top:110px;
+		width: 100%;
+		float:left;
+		display: inline-block;
+		} 
+
+	#wrap6 .column3 .box{
+		top:100px;
+		width:100%;
+	    height: 120px;
+		padding: 4px;
+		margin: 0 auto;
+		border-radius: 5px;
+		border: 2px solid black;
+		z-index:11;
+		}
+	.column3 .logo {
+		float:left;
+		position: relative;
+		top:0px;
+		text-align: center;
+		margin: 0 auto;
+		}
+
+	.column3 .boxhead {
+		text-align:left;
+		font-size: 19px;
+	    color: black;
+		}
+
+	.column3 .boxhead h3{
+		padding-top: 20px;
+	    font-size:30px;
+	    margin:0;
+	    font-family: 'Georgia';
+		}
+
+	.column3 .boxhead p{
+		margin: 0;
+	    padding-left:10px;
+	    padding-right:10px;
+	    font-family: 'Times New Roman';
+	    font-size:20px;
+		}
+
+
+	/*General for all the organizations*/
+	.box img.org {
+		width: 120px;
+		height: 120px;
+		}
+/*-------------Footer--------------*/
+		#wrapfoot{
+			padding: 1em;
+			overflow: hidden;
+			background: #161c20;
+			color: white;
+		}
+		div.footer {
+			width: 100%;
+			text-align: center;
+			font-size: 2em;
 		}
